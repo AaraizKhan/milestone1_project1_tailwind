@@ -1,101 +1,70 @@
 import Image from "next/image";
+ import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+<main>
+<Navbar/>
+ <div className="min-h-screen bg-gray-100">
+ <section class="bg-gray-100 dark:bg-gray-900 py-16">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-semibold text-center text-gray-900 dark:text-white mb-12">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    
+      <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Consulting</h3>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Expert guidance to streamline your business strategy and optimize operational efficiency.</p>
+      </div>
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Custom Solutions</h3>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Tailored software solutions to meet the unique needs of your organization, driving innovation.</p>
+      </div>
+  
+      <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Support & Maintenance</h3>
+        <p class="mt-4 text-gray-600 dark:text-gray-300">Reliable technical support and maintenance services to ensure seamless operations.</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="bg-white dark:bg-gray-800 py-16">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-semibold text-center text-gray-900 dark:text-white mb-12">Client Testimonials</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+  
+      <div class="bg-gray-50 dark:bg-gray-900 p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+        <p class="text-gray-600 dark:text-gray-300">"Their expertise and professionalism were beyond our expectations. They delivered outstanding results."</p>
+        <h4 class="mt-4 font-semibold text-gray-900 dark:text-white">- Alex Johnson, CEO of TechCorp</h4>
+      </div>
+      
+      <div class="bg-gray-50 dark:bg-gray-900 p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+        <p class="text-gray-600 dark:text-gray-300">"From concept to execution, the team was highly collaborative and results-driven."</p>
+        <h4 class="mt-4 font-semibold text-gray-900 dark:text-white">- Maria Lopez, Marketing Director, Innovate Inc.</h4>
+      </div>
+    
+      <div class="bg-gray-50 dark:bg-gray-900 p-8 rounded-lg shadow-lg transition hover:shadow-xl">
+        <p class="text-gray-600 dark:text-gray-300">"Reliable, professional, and dedicated to excellence. I highly recommend their services."</p>
+        <h4 class="mt-4 font-semibold text-gray-900 dark:text-white">- James Parker, Founder of StartUpX</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+<footer class="bg-gray-900 text-white py-3">
+  <div class="container mx-auto text-center flex justify-between items-center">
+    <div class="flex items-center">
+      <a href="#" class="text-blue-400 hover:text-blue-600 mx-2">Privacy Policy</a>
+      <a href="#" class="text-blue-400 hover:text-blue-600 mx-2">Terms of Service</a>
+    </div>
+    <p>&copy; 2024 technolocal. All rights reserved.</p>
+  </div>
+</footer>
+
+    </div>
+ 
+</main>
   );
 }
